@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    druid:
+      db1:
+        url: jdbc:mysql://localhost:3306/amtcoin?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+        username: root
+        password: admin123
+        driver-class-name: com.mysql.jdbc.Driver
+        borrowConnectionTimeout: 30
+        loginTimeout: 30
+        maintenanceInterval: 60
+        maxIdleTime: 60
+        maxLifetime: 20000
+        maxPoolSize: 25
+        minPoolSize: 3
+        uniqueResourceName: dataSource1
+      db2:
+        url: jdbc:mysql://localhost:3306/camp?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+        username: root
+        password: admin123
+        driver-class-name: com.mysql.jdbc.Driver
+        borrowConnectionTimeout: 30
+        loginTimeout: 30
+        maintenanceInterval: 60
+        maxIdleTime: 60
+        maxLifetime: 20000
+        maxPoolSize: 25
+        minPoolSize: 3
+        uniqueResourceName: dataSource2
+
+
